@@ -1,1 +1,80 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared's Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        .box:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .right-column {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <a href="about.html" class="box">
+                <h2>About Me</h2>
+                <p>Click to learn more about me.</p>
+            </a>
+            <a href="projects.html" class="box">
+                <h2>Projects</h2>
+                <p>View my project portfolio.</p>
+            </a>
+        </div>
+        <div class="right-column">
+            <h1>Jared's Profile</h1>
+            <img src="img/j.jpg" alt="Profile Picture">
+        </div>
+    </div>
+</body>
+</html>
